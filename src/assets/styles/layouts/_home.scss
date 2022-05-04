@@ -81,7 +81,7 @@ body {
         padding-bottom: $mainGridPaddingBottom;
     }
     .main__grid1 {
-        grid-area: main1;
+        grid-area: main;
         color: $mainGrid1Color;
         text-align: center;
         padding-bottom: 2%;
@@ -301,7 +301,6 @@ body {
                 margin-right: $mainMarginTopDiv;
             }
             .article__portada{
-                margin-top: 8%;
                 width: 100%;
             }
             .article__blockcuote{
