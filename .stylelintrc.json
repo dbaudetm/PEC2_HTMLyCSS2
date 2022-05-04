@@ -1,0 +1,38 @@
+{
+    "extends": [
+        "stylelint-config-recommended-scss"
+    ],
+    "rules": {
+        "selector-class-pattern": [
+            "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+            {
+                "message": "el nombre del elemento css no es correcto"
+            }
+        ],
+        "string-quotes": [
+            "double",
+            {
+                "message": "hay comillas simples"
+            }
+        ],
+        "no-duplicate-selectors": [
+            true,
+            {
+                "message": "se ha duplicado el nombre de un selector"
+            }
+        ],
+        "color-no-invalid-hex": [
+            true,
+            {
+                "message": "Color hexadecimal invalido"
+            }
+        ],
+        "property-no-unknown": true,
+        "declaration-block-semicolon-newline-after": [
+            "always",
+            {
+                "message": "Hay una linea vacia despues de un punto y coma"
+            }
+        ]
+    }
+}

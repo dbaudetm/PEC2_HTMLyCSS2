@@ -1,0 +1,82 @@
+
+
+/*---------------------------------------------*\
+ #Body
+\*---------------------------------------------*/
+$background: black;
+$minheight: 100vh;
+/*---------------------------------------------*\
+ #Header
+\*---------------------------------------------*/
+    $pheader:1.5rem;
+    $tamanoImagen: 30%;
+    $grid-auto-rowsHeader: 5rem;
+    $marginTopHeader: 2%;
+    $marginLeftHeader: 5%;
+    $HeightHeader:5%;
+    $MarginBottomHeader:2%;
+    $ColourTextHeader: white;
+    $FontStyleHeader: "Nova Cut", sans-serif;
+    $FontSizeHeader: x-large;
+    $PaddingAHeader:2px;
+/*---------------------------------------------*\
+ #Footer
+\*---------------------------------------------*/
+    $FontStyleFooter: "Nova Cut", sans-serif;
+    $FontSizeFooter: x-large;
+    $MarginAFooter: 5%;
+    $ImageFooter: 10%;
+    $PaddingHorario: 5%;
+    $PaddingCorreo: 5%;
+    $IframeTopFooter: 2%; 
+    $IframeHeight: 100%;
+    $IframeWeight: 100%;
+    $ImageWidthFooter:2%;
+/*---------------------------------------------*\
+ #Main
+\*---------------------------------------------*/
+    $mainMarginTop:2%;
+    $mainMarginTopGrid:10%;
+    $mainMarginBottom:2%;
+    $mainMarginLeft: 2%;
+    $mainImgWidth:30%;
+    $mainImgPadding:2%;
+    $mainImgHeight:1%;
+    $mainGridPaddingLeft:1%;
+    $mainH1PaddingTop:5%;
+    $mainGridGap:20px;
+    $mainFontSize:400%;
+    $mainH1PaddingBottom:5%;
+    $mainFontFamily:"UnifrakturCook", sans-serif;
+    $mainGridPaddingBottom:2.5rem;
+    $mainGrid1Color: white;
+    $mainFontStyleGrid: "Nova Cut", sans-serif;
+    $mainFontSize: x-large;
+    $mainPaddingBottom: 20%;
+    $mainTextAlign: center;
+    $mainWidthDiv: 80%;
+    $mainPaddingDiv: 3%;
+    $mainBackGroundColor: white;
+    $mainBorderRadius: 25px;
+    $mainMarginTopDiv: 10%;
+    $mainMarginBottomDiv: 10%;
+    $mainMargin: 10%;
+    $mainPTextAlign: justify;
+    
+/*---------------------------------------------*\
+ #Article
+\*---------------------------------------------*/
+
+    $colorBlockcuote:grey;
+    $colorSpan:darkgray;
+    $articleMargin: 20%;
+
+/*---------------------------------------------*\
+ #Form
+\*---------------------------------------------*/
+
+    $flexDirrection: column;
+    $FontSizeForm: 20px;
+    $FormInputBackGround: darkgrey;
+    $FormSubmitBackground: blue;
+ 

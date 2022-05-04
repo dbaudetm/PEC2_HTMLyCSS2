@@ -1,0 +1,357 @@
+
+/*
+
+- Variables
+- Body
+    * Main
+        # Header
+        # Footer
+        # Data__grid
+        # Article
+
+
+*/
+
+
+
+/*---------------------------------------------*\
+ #Variables
+\*---------------------------------------------*/
+@import "./../variables";
+@import url("https://fonts.googleapis.com/css2?family=Nova+Cut&family=UnifrakturCook:wght@700&display=swap");
+
+/*---------------------------------------------*\
+ #Body
+\*---------------------------------------------*/
+body {
+    position: relative;
+    min-height: $minheight;
+    background-color: $background;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    }
+
+
+
+
+
+
+/*---------------------------------------------*\
+ #Main
+\*---------------------------------------------*/
+
+.main {
+    grid-area: main;
+    margin-top: $mainMarginTop;
+}
+    .main__img1 {
+        grid-area: "img1";
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: $mainImgWidth;
+        padding: $mainImgPadding;
+        height: $mainImgHeight;
+    }
+    .main__img2 {
+        grid-area: "img2";
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: $mainImgWidth;
+        padding: $mainImgPadding;
+        height: $mainImgHeight;
+    }
+    .main__h1 {
+        color: gold;
+        text-align: center;
+        font-size: 400%;
+        margin-top: $mainMarginTop;
+        padding-top: $mainH1PaddingTop;
+        padding-bottom: $mainH1PaddingBottom;
+        font-family: $mainFontFamily;
+    }
+    .main__grid {
+        padding-left: $mainGridPaddingLeft;
+        display: grid;
+        grid-template-areas:"main1 main2";
+        grid-gap: $mainGridGap;
+        padding-bottom: $mainGridPaddingBottom;
+    }
+    .main__grid1 {
+        grid-area: main1;
+        color: $mainGrid1Color;
+        text-align: center;
+        padding-bottom: 2%;
+        margin-bottom: $mainMarginBottom;
+        font-family: $mainFontStyleGrid;
+        font-size: $mainFontSize;
+    }
+        .main__grid1 h2 {
+            padding: $mainH1PaddingTop;
+        }
+    .main__grid2 {
+        font-family: $mainFontStyleGrid;
+        font-size: $mainFontSize;
+        grid-area: main2;
+        color: $mainGrid1Color;
+        text-align: $mainTextAlign;
+        padding-bottom: $mainPaddingBottom;
+        margin-bottom: $mainMarginBottom;
+    }
+        .main__grid2 h2 {
+            padding: $mainH1PaddingTop;
+        }
+   
+    .main__grid3 {
+        margin-top: $mainMarginTopGrid;
+        display: grid;
+        font-family: $mainFontStyleGrid;
+        font-size: $mainFontSize;
+        grid-area: main2;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        color: $mainGrid1Color;
+        text-align: $mainTextAlign;
+        margin-left: $mainMarginLeft;
+        margin-bottom: $mainMarginBottom;
+    }
+    .main__div{
+        width: $mainWidthDiv;
+        padding: $mainPaddingDiv;
+        background-color:  $mainBackGroundColor;
+        margin: auto;
+        border-radius: $mainBorderRadius;
+        margin-top: $mainMarginTopDiv;
+        margin-bottom: $mainMarginBottomDiv;
+    }
+    .main__p{
+            text-align: $mainPTextAlign;
+            margin-left: $mainMargin;
+            margin-right: $mainMargin;
+            margin-bottom: $mainMarginBottom;
+    }
+    .main__error{
+        text-align: $mainPTextAlign;
+        margin-left: $mainMargin;
+        margin-right: $mainMargin;
+        margin-bottom: $mainMarginBottom;
+        color: red;
+        font-weight: bold;
+    }
+    .card{
+        margin: auto;
+    }
+    .main__canvas{
+        margin: auto;
+        width: "200";
+        height: "300";
+    } 
+    .main__form{
+        display: flex;
+        flex-direction:$flexDirrection;
+        margin: auto;
+        width: 60%;
+        margin-bottom: 2%;
+        flex-wrap: wrap;
+    }
+        .form__label{
+            display: flex;
+            flex-direction: $flexDirrection;
+            font-size: $FontSizeForm;
+            width: 80%;
+            text-align: left;
+        }
+        .form__input{
+            background-color:$FormInputBackGround;
+            display: flex;
+            flex-direction: $flexDirrection;
+            font-size: $FontSizeForm;
+            width: 80%;
+            text-align: left;
+            margin-bottom: 5%;
+            border-radius: 25px;
+        }
+        .form__submit{
+            background-color:$FormSubmitBackground;
+            color:white;
+            display: flex;
+            flex-direction: $flexDirrection;
+            font-size: $FontSizeForm;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1%;
+            border-radius: 25px;
+        }
+
+
+
+
+
+
+
+/*---------------------------------------------*\
+ #Header
+\*---------------------------------------------*/
+
+        .header {
+            grid-area: header;
+            padding: $pheader;
+        }
+            .header__grid {
+                align-items: center;
+                display: grid;
+                grid-auto-rows: $grid-auto-rowsHeader;
+                grid-template-columns: repeat(auto-fit, minmax(min(100%, 5rem), 2fr));
+                margin-top: $marginTopHeader;
+                margin-left: $marginLeftHeader;
+                height: $HeightHeader;
+                margin-bottom: $MarginBottomHeader;
+                color: $ColourTextHeader;
+            }
+            .header__a {
+                font-family: $FontStyleHeader;
+                font-size: $FontSizeHeader;
+                margin: auto;
+                padding: $PaddingAHeader;
+            }
+            .header__img {
+                width: $tamanoImagen;
+            }
+
+
+
+
+
+/*---------------------------------------------*\
+ #Footer
+\*---------------------------------------------*/
+
+        .footer {
+            grid-area: footer;
+            color: #FDFDFD;
+        }
+            .footer__a {
+                margin-right: $MarginAFooter;
+                grid-area: link;
+                font-family: $FontStyleFooter;
+                font-size: $FontSizeFooter;
+            }
+            .footer__img {
+                grid-area: img;
+                width: $ImageFooter;
+            }
+            .horario {
+                padding: $PaddingHorario;
+                grid-area: dates;
+            }
+            .correo{
+                padding: $PaddingCorreo;
+                grid-area: dates;
+            }
+            .mapa {
+                margin: auto;
+                grid-area: map;
+            }
+            .mapa__iframe {
+                padding-top: $IframeTopFooter;
+                width: $IframeWeight;
+                height: $IframeHeight;
+            }
+
+
+
+
+/*---------------------------------------------*\
+ #Data__grid
+\*---------------------------------------------*/
+    
+        .data__grid {
+            padding-left: 10%;
+            display: grid;
+            grid-template-areas:
+                "data1 data2";
+            grid-gap: 5px;
+            padding-bottom: 2.5rem;
+        }
+
+
+
+
+
+
+
+        
+
+/*---------------------------------------------*\
+ #Article
+\*---------------------------------------------*/
+
+        .article{
+            background-color: $mainBackGroundColor;
+            text-align: $mainTextAlign;
+            padding-bottom: 5%;
+        }
+            .article__img{
+                margin-top: 8%;
+                width: 80%;
+                margin-bottom: 4%;
+                margin-left: $mainMarginTopDiv;
+                margin-right: $mainMarginTopDiv;
+            }
+            .article__portada{
+                margin-top: 8%;
+                width: 100%;
+            }
+            .article__blockcuote{
+                margin-left: $articleMargin;
+                margin-right: $articleMargin;
+                font-size: 200%;
+                color: $colorBlockcuote;
+                margin-bottom: $mainMarginBottom;
+                text-align: left;
+            }
+            .article__top{
+                margin-left: $articleMargin;
+                margin-right: $articleMargin;
+            }
+            .article__span{
+                color:darkgray;
+                font-size: 30%;
+            }
+            .article__h1{
+                font-family: $mainFontStyleGrid;
+                font-size: 400%;
+                margin-bottom: 3%;
+            }
+            .article__p{
+                text-align: $mainPTextAlign;
+                margin-left: $articleMargin;
+                margin-right: $articleMargin;
+                margin-bottom: $mainMarginBottom;
+            }
+            .article__hr{
+                background-color: black;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                margin-left: $articleMargin;
+                margin-right: $articleMargin;
+            }
+            .article__h2{
+                font-family: $mainFontStyleGrid;
+                font-size: 200%;
+                text-align: left;
+                margin-left: $articleMargin;
+                margin-right: $articleMargin;
+                margin-bottom:$mainMarginBottom;
+            }
+            .article__ol{
+                list-style: circle;
+            }
+        
+
+
+  
+
+
