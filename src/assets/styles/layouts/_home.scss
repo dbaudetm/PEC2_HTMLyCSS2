@@ -98,6 +98,14 @@ body {
         grid-gap: $mainGridGap;
         padding-bottom: $mainGridPaddingBottom;
     }
+
+    .grid__imag{
+
+
+        width: 50%;
+        margin: auto;
+    }
+
     .main__grid1 {
         grid-area: main1;
         color: $mainGrid1Color;
