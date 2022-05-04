@@ -81,7 +81,7 @@ body {
         padding-bottom: $mainGridPaddingBottom;
     }
     .main__grid1 {
-        grid-area: main;
+        grid-area: main1;
         color: $mainGrid1Color;
         text-align: center;
         padding-bottom: 2%;
@@ -179,7 +179,7 @@ body {
             display: flex;
             flex-direction: $flexDirrection;
             font-size: $FontSizeForm;
-            width: 100%;
+            width: 80%;
             text-align: center;
             margin-bottom: 1%;
             border-radius: 25px;
@@ -301,6 +301,7 @@ body {
                 margin-right: $mainMarginTopDiv;
             }
             .article__portada{
+                margin-top: 8%;
                 width: 100%;
             }
             .article__blockcuote{
