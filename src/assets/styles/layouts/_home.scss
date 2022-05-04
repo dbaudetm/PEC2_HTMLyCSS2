@@ -218,6 +218,10 @@ body {
                 margin: auto;
                 padding: $PaddingAHeader;
             }
+            .header__a :active{
+                color: white;
+                text-decoration: none;
+            }
             .header__a :visited{
                 color: white;
                 text-decoration: none;
