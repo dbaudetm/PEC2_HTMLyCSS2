@@ -32,8 +32,27 @@ body {
         "main main main"
         "footer footer footer";
     }
+    a {
+        font-family: $FontStyleHeader;
+        font-size: $FontSizeHeader;
+        color: white;
+        text-decoration: none;
+        margin: auto;
+        padding: $PaddingAHeader;
+    }
 
-
+    a :active{
+        color: white;
+        text-decoration: none;
+    }
+    a :visited{
+        color: white;
+        text-decoration: none;
+    }
+    a :hover{
+        color:gold;
+        text-decoration: underline;
+    }
 
 
 
