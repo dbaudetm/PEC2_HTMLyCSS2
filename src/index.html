@@ -12,20 +12,21 @@
   <body>
     <include src="./views/header.html"></include>
     <section class="main">
-      <h1 class="main__h1">Kings of Nu-metal</h1>
-      <div class="main__grid">
-        <div class="main__grid1">
-          <h2>Sabado 23</h2>
-          <img  src="./assets/images/LinkinPark.png" alt="Logo de linkin park">
-          <img  src="./assets/images/KORN.png" alt="Logo de KORN">
-          <img  src="./assets/images/PAPAROACH.png" alt="Logo de Paparoach">
-        </div>
-        <div class="main__grid2">
-          <h2>Domingo 24</h2>
-          <img  src="./assets/images/SOAD.png" alt="Logo de SOAD">
-          <img  src="./assets/images/DISTURBED.png" alt="Logo de Disturbed">
-          <img  src="./assets/images/BRINGMETHEHORIZON.png" alt="Logo de Bring me the horizon">
-        </div>
+      <div class="main__div">
+        <h1 class="main__h1">¡Entra en el sorteo!</h1>
+        <p class="main__p">Solicita tu codigo para participar en el sorteo de unas camisetas
+        de los grupos que van a participar en el festival, son límitadas!!</p>
+        <form class="main__form" onsubmit=" false;">
+          <label class="form__label">Introduce tu nombre</label>
+          <input class="form__input type="text" id="nombre" required >
+          <label class="form__label" > Introduce tu apellido</label>
+          <input class="form__input type="text" id="apellido" required >
+          <button class="form__submit type="submit" value="Generar codigo" id="code" readonly name="Genera" onclick="code()">Generar codigo</button>
+        </form>
+        <p class="main__error" id="error"></p>
+        <canvas class="main__canvas" id="myCanvas" ></canvas>
+        <p class="main__p" id="usuario"></p>
+        <p class="main__p" id="codigo" ></p>
       </div>
     </section>
     <include src="./views/footer.html"></include>
