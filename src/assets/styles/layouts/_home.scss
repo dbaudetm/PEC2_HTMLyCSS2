@@ -213,6 +213,8 @@ body {
             .header__a {
                 font-family: $FontStyleHeader;
                 font-size: $FontSizeHeader;
+                color: white;
+                text-decoration: none;
                 margin: auto;
                 padding: $PaddingAHeader;
             }
