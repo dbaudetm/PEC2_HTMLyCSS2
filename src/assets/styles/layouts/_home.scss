@@ -64,6 +64,7 @@ body {
 .main {
     grid-area: main;
     margin-top: $mainMarginTop;
+    margin-bottom: 8%;
 }
     .main__img1 {
         grid-area: "img1";
